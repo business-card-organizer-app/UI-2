@@ -1,33 +1,31 @@
 //Container/div surrounding page
-.container {
-
-//Header
-  header {
-    display: flex;
-    margin-top: 3%;
-    //h1 style
-    .business-name {
-      width: 20%;
-      margin-left: 0;
-      margin-bottom: 1%;   
-    }
-    button {
-      font-size: 2rem;
-      background: grey;
-      margin: 15%;
-      width: 100%;
-      height: 17%;
-      margin-left: 0;
-      margin-top: 0;
-      color: black;
-    }
-  }
-
-  //section directly below header
-  .head-content {
+// html {
+//   background-image: url("../img/bg.jpg");
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
+header {
+  .flexDisplay(row, center);
+ // h1 style
+  .business-name {
     margin: 0 auto;
+    margin-top: 3%;
+  }
+}
+
+.body-container {
+  .flexDisplay(row, flex-start);
+  min-width: 100%;
+  margin: auto;
+  margin-top: 3%;
+  * {
+    border: 1px solid grey;
+  }
+  //section directly below header
+  .card1 {
     margin-bottom: 3%;
-    .top-img {
+    width: 100%;
+    img {
       margin-bottom: 3%;
     }
   }

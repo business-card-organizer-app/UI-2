@@ -158,20 +158,31 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.navigations {
-  width: 40%;
+.body-container {
+  max-width: 800px;
+  width: 100%;
   margin: 0 auto;
-  margin-right: 0;
+}
+.navigations {
+  width: 500px;
+  height: 270vh;
+  margin-right: 1%;
+  background: grey;
 }
 .navigations nav {
   display: flex;
+  flex-direction: column;
+  align-items: left;
 }
 .navigations nav a {
-  white-space: nowrap;
-  font-size: 2rem;
+  font-size: 3rem;
   text-decoration: none;
-  margin: 0 auto;
-  padding: 3%;
+  margin-top: 10%;
+  color: black;
+}
+.navigations button {
+  font-size: 2rem;
+  background: grey;
   color: black;
 }
 .footer {
@@ -180,70 +191,71 @@ img {
   background: lightgrey;
   text-align: center;
 }
-.container header {
+header {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header .business-name {
+  margin: 0 auto;
   margin-top: 3%;
 }
-.container header .business-name {
-  width: 20%;
-  margin-left: 0;
-  margin-bottom: 1%;
+.body-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  min-width: 100%;
+  margin: auto;
+  margin-top: 3%;
 }
-.container header button {
-  font-size: 2rem;
-  background: grey;
-  margin: 15%;
+.body-container * {
+  border: 1px solid grey;
+}
+.body-container .card1 {
+  margin-bottom: 3%;
   width: 100%;
-  height: 17%;
-  margin-left: 0;
-  margin-top: 0;
-  color: black;
 }
-.container .head-content {
-  margin: 0 auto;
+.body-container .card1 img {
   margin-bottom: 3%;
 }
-.container .head-content .top-img {
-  margin-bottom: 3%;
-}
-.container .top-section {
+.body-container .top-section {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: 30px 0;
 }
-.container .top-section .text-content {
+.body-container .top-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
-.container .top-section .img-content {
+.body-container .top-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
-.container .top-section .img-content img {
+.body-container .top-section .img-content img {
   border-radius: 10px;
 }
-.container .middle-content {
+.body-container .middle-content {
   padding-bottom: 30px;
 }
-.container .middle-content .img-content {
+.body-container .middle-content .img-content {
   padding-right: 1%;
   padding-left: 0;
 }
-.container .middle-content .text-content {
+.body-container .middle-content .text-content {
   padding-left: 1%;
   padding-right: 0;
 }
-.container .lower-middle-content {
+.body-container .lower-middle-content {
   margin: 0 auto 30px;
 }
-.container .lower-middle-content img {
+.body-container .lower-middle-content img {
   border-radius: 10px;
 }
-.container .bottom-content {
+.body-container .bottom-content {
   padding-top: 30px;
 }
-.container .bottom-content .showcase {
+.body-container .bottom-content .showcase {
   width: 30%;
   margin-bottom: 30px;
 }
