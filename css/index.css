@@ -171,11 +171,12 @@ img {
   width: 20%;
   height: 10%;
   white-space: nowrap;
-  font-size: 2rem;
+  font-size: 1.5vw;
   text-decoration: none;
   margin: 2%;
   margin-left: 5%;
   margin-right: 5%;
+  padding: 1%;
   color: white;
   border: 1px solid white;
 }
@@ -213,7 +214,10 @@ header .business-name {
 }
 @media (max-width: 500px) {
   header .business-name {
-    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40vw;
     margin: 3%;
   }
 }
