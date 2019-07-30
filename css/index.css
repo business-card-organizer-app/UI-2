@@ -138,8 +138,11 @@ h1 {
   font-size: 4rem;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 5rem;
   padding-bottom: 10px;
+}
+h3 {
+  font-size: 3.5rem;
 }
 h4 {
   font-size: 2.5rem;
@@ -147,7 +150,7 @@ h4 {
 }
 p {
   line-height: 1.5;
-  font-size: 1.6rem;
+  font-size: 2rem;
   padding-bottom: 10px;
 }
 img {
@@ -180,28 +183,26 @@ img {
   color: white;
   border: 1px solid white;
 }
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .navigations nav a {
     width: 25%;
-    height: 10vh;
     margin: 1%;
-    padding-bottom: 5%;
     font-size: 3rem;
     text-align: center;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .navigations nav a {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 90%;
-    height: 15vh;
+    height: 10vh;
     font-size: 3.5rem;
     justify-content: center;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .navigations nav {
     display: flex;
     flex-direction: column;
@@ -257,23 +258,39 @@ header .business-name {
     font-size: 8vw;
   }
 }
+@media (max-width: 800px) {
+  header .business-name h1 {
+    font-size: 9vw;
+  }
+}
 .home {
   width: 100%;
+  font-size: 10rem;
 }
 .home .top-content {
   text-align: center;
   margin-bottom: 5%;
 }
+@media (max-width: 700px) {
+  .home .top-content {
+    width: 100%;
+  }
+  .home .top-content p {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
 @media (max-width: 500px) {
   .home .top-content {
-    width: 75%;
+    width: 90%;
+    margin-left: 5%;
   }
 }
 .home .card-pair-1 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 75%;
+  width: 85%;
   margin: 0 auto;
 }
 .home .card-pair-1 .card1 {
@@ -289,7 +306,10 @@ header .business-name {
   width: 500px;
   height: 300px;
 }
-@media (max-width: 500px) {
+.home .card-pair-1 .card1 h3 {
+  margin-bottom: 5%;
+}
+@media (max-width: 700px) {
   .home .card-pair-1 .card1 {
     width: 75%;
     margin-top: 3%;
@@ -308,7 +328,10 @@ header .business-name {
   width: 500px;
   height: 300px;
 }
-@media (max-width: 500px) {
+.home .card-pair-1 .card2 h3 {
+  margin-bottom: 5%;
+}
+@media (max-width: 700px) {
   .home .card-pair-1 .card2 {
     width: 75%;
     margin-top: 3%;
@@ -334,7 +357,10 @@ header .business-name {
   width: 500px;
   height: 300px;
 }
-@media (max-width: 500px) {
+.home .card-pair-2 .card3 h3 {
+  margin-bottom: 5%;
+}
+@media (max-width: 700px) {
   .home .card-pair-2 .card3 {
     width: 75%;
     margin-top: 3%;
@@ -353,7 +379,10 @@ header .business-name {
   width: 500px;
   height: 300px;
 }
-@media (max-width: 500px) {
+.home .card-pair-2 .card4 h3 {
+  margin-bottom: 5%;
+}
+@media (max-width: 700px) {
   .home .card-pair-2 .card4 {
     width: 75%;
     margin-top: 3%;
