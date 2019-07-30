@@ -1,22 +1,26 @@
 // Navigation Styles here
 .navigations {
-    width: 500px;
-    height: 270vh;
+    width: 40%;
     margin-right: 1%;
-    background: grey;
+    margin-top: 2%;
     nav {
-        .flexDisplay(column, left);
+        display: flex;
         a {
-            font-size: 3rem;
+            text-align: center;
+            width: 20%;
+            height: 10%;
+            white-space: nowrap;
+            font-size: 2rem;
             text-decoration: none;
-            color: black;
-            margin-top: 10%;
-            color: black;
+            margin: 2%;
+            margin-left: 5%;
+            margin-right: 5%;
+            color: white;
+            border: 1px solid white;
         }
     }
-    button {
-        font-size: 2rem;
-        background: grey;
-        color: black;
+    @media @mobile {
+        width: 100%;
+        margin: 0;
     }
 }
